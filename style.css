@@ -1,4 +1,87 @@
-li{
-    display: inline-block;
-
+h1{
+  color: goldenrod;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-shadow: rgb(29, 29, 141);
 }
+#head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* 100% avoids horizontal scrollbar issues from 100vw */
+  padding: 16px 32px;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+}
+
+#logo{
+  width: 200px;
+  height: 60px;
+}
+#slide_mother{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto
+}
+.debut_du_page{
+  position: relative; /* Anchors the absolute buttons inside this container */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.slide {
+  flex: 0 0 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.slide img,
+.slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.hide{
+    visibility: hidden;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.slideBtn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.25s ease, color 0.25s ease;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+.slideBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.prev { left: 24px; }
+.next { right: 24px; }
