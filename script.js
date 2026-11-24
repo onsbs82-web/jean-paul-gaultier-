@@ -63,3 +63,8 @@ slider.addEventListener('scrollend', () => {
 
 // Kick off the 4-second auto-slide when the page loads
 resetTimer();
+
+function move(){
+  document.getElementById("ifr").classList.add('move');
+  
+}

@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav></nav>
-        <div id="head">
-            <img src="logo.png" alt="" id="logo">
-            <h1>Jean Paul Gaultier</h1>
-            <button>j</button>
-        </div>
+    <header id="head">
+            <nav class="navbar">
+                
+                    <img src="logo.png" alt="" id="logo">
+                    <button class="menu" id="menu" aria-expanded="false"
+                    aria-label="menu">☰</button>
+                    <ul class="nav-links" id="navbar">
+                        <li><a href="FRAGRANCES.html" id="frag" onclick="move()" target="ifr">FRAGRANCES</a></li>
+                        <li><a href="UNIVERS_GAULTIER.html" id="uni" onclick="move()" target="ifr">L'UNIVERS GAULTIER</a></li>
+                        <li><a href="COMPTE.html" id="cpt" onclick="move()" target="ifr">MON COMPTE</a></li>
+                    </ul>
+                
+            </nav>
     </header>
     <main>
         <div class="debut_du_page">
@@ -27,16 +33,7 @@
         <button class="slideBtn prev" id="prevBtn" aria-label="Previous slide">&#8592;</button>
     <button class="slideBtn next" id="nextBtn" aria-label="Next slide">&#8594;</button>
     </div>
-        ppppppp
-        <button></button>
-        <table border="1">
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-        </table>
+        <iframe src="FRAGRANCES.html" frameborder="0" id="ifr" name="ifr"></iframe>
     </main>
     <script src="script.js"></script>
 </body>
