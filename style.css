@@ -135,14 +135,28 @@ color: goldenrod;
 text-decoration: none;
 }
 }
-iframe{
-  z-index: 10px;
+#ifr{
+  z-index: 10;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 15%;
+  left: -999%;
   background-color: bisque;
-
+  width:500px;
+  height: 80vh;
 }
 .move{
   transform: translateX(-500px);  
 }
+.moveback{
+  transform: translateX(500px);  
+}
+#blurer{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(78, 78, 78,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+html{scroll-behavior: smooth;}

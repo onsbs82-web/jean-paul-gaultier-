@@ -65,6 +65,12 @@ slider.addEventListener('scrollend', () => {
 resetTimer();
 
 function move(){
-  document.getElementById("ifr").classList.add('move');
-  
+  document.getElementById("ifr").style.left=0
+}
+function apear(){
+  document.getElementById("blurer").classList.remove('hide')
+}
+function moveback(){
+  document.getElementById("ifr").style.left=-999+"%"
+  document.getElementById("blurer").classList.add('hide')
 }

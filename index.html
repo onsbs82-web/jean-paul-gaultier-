@@ -14,9 +14,9 @@
                     <button class="menu" id="menu" aria-expanded="false"
                     aria-label="menu">☰</button>
                     <ul class="nav-links" id="navbar">
-                        <li><a href="FRAGRANCES.html" id="frag" onclick="move()" target="ifr">FRAGRANCES</a></li>
-                        <li><a href="UNIVERS_GAULTIER.html" id="uni" onclick="move()" target="ifr">L'UNIVERS GAULTIER</a></li>
-                        <li><a href="COMPTE.html" id="cpt" onclick="move()" target="ifr">MON COMPTE</a></li>
+                        <li><a href="FRAGRANCES.html" id="frag" onclick="move(),apear()" target="ifr">FRAGRANCES</a></li>
+                        <li><a href="UNIVERS_GAULTIER.html" id="uni" onclick="move(),apear()" target="ifr">L'UNIVERS GAULTIER</a></li>
+                        <li><a href="COMPTE.html" id="cpt" onclick="move(),apear()" target="ifr">MON COMPTE</a></li>
                     </ul>
                 
             </nav>
@@ -33,7 +33,8 @@
         <button class="slideBtn prev" id="prevBtn" aria-label="Previous slide">&#8592;</button>
     <button class="slideBtn next" id="nextBtn" aria-label="Next slide">&#8594;</button>
     </div>
-        <iframe src="FRAGRANCES.html" frameborder="0" id="ifr" name="ifr"></iframe>
+        <iframe src="FRAGRANCES.html" frameborder="0" id="ifr" name="ifr" ></iframe>
+        <div id="blurer" class="hide" onclick="moveback()"></div>
     </main>
     <script src="script.js"></script>
 </body>
